@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.137.131:3306/cloudDB01?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+    username: root
+    password: root
+mybatis:
+  type-aliases-package: com.el.webservice.model
+  #mapper.xmlÀ˘‘⁄Œª÷√
+  mapper-locations: classpath*:com/el/webservice/mapper/*.xml
+  #  mapper-locations: com.el.provider8001.mapper
+logging:
+  path: ./log
+  level:
+    root: info
+    org.mybatis: info
